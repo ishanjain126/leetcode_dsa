@@ -2,7 +2,6 @@ class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         res = []
         for i in range(numRows):
-            print (i)
             if i == 0:
                 res.append([1])
             elif i == 1:
