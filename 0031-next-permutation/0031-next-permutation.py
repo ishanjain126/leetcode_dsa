@@ -14,10 +14,6 @@ class Solution:
                 if(nums[i] > nums[idx1]):
                     nums[idx1], nums[i] = nums[i], nums[idx1]
                     break
-            # j = -1
-            # for i in range((len(nums) // 2)):
-            #     nums[j], nums[i+idx1+1] = nums[i+idx1+1], nums[j]
-            #     j -= i
             nums[idx1+1:] = reversed(nums[idx1+1:])
         else:
             nums.reverse()
